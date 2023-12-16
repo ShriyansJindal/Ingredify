@@ -5,8 +5,6 @@ body{
     margin: 0;
     padding: 0;
     /* width: 100vw; */
-
-
 }
 .head{
     /* border: 2px solid black; */
@@ -65,10 +63,16 @@ margin-right: 0;
     align-items: center;
     justify-content: center;
 }
+
 .random-meal{
     padding: 10px;
-    border: 2px solid black;
+    /* width: 400px; */
+    /* border: 2px solid black; */
     text-align: center;
+}
+.random-meal h3{
+    margin: auto;
+    width: 300px;
 }
 .random-meal img{
     width: 350px;
@@ -86,11 +90,11 @@ margin-right: 0;
     font-size: 45px;
 }
 .result{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
     margin: 10px 20px;
     padding: 10px;
-    width: 23%;
+    width: 20%;
 }
 .result img{
     width: 300px;
@@ -100,7 +104,7 @@ margin-right: 0;
 .modal{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.468);
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* color: white; */
     width: 100vw;
     height: 100vh;
@@ -126,4 +130,7 @@ margin-right: 0;
     right: 20px;
     position: absolute;
     cursor: pointer;
+}
+#Ingredi-list li{
+    margin: 5px 0px;
 }

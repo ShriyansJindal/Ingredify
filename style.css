@@ -58,29 +58,33 @@ margin-right: 0;
 }
 .container{
     /* border: 2px solid red; */
-    margin-top: 30px;
+    margin-top: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* height: calc(100vh - 268px); */
 }
 
 .random-meal{
-    padding: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 247, 231);
+    box-shadow: 0 0 10px 0 rgb(164, 164, 164);
     /* width: 400px; */
     /* border: 2px solid black; */
     text-align: center;
 }
 .random-meal h3{
-    margin: auto;
+    margin:10px auto;
     width: 300px;
 }
 .random-meal img{
-    width: 350px;
-    border-radius: 10px;
+    width: 330px;
+    border-radius: 20px;
 }
 .search-result{
     /* border: 2px solid black; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -90,15 +94,22 @@ margin-right: 0;
     font-size: 45px;
 }
 .result{
-    /* border: 2px solid red; */
+    /* border: 2px solid gray; */
+    background-color: rgb(255, 247, 233);
+    box-shadow: 0 0 10px 0 rgb(164, 164, 164);
+    border-radius: 20px;
     text-align: center;
     margin: 10px 20px;
     padding: 10px;
-    width: 20%;
+    width: 330px;
+}
+.result:active{
+    box-shadow: none;
+    transform: scale(0.95);
 }
 .result img{
     width: 300px;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 .modal{
@@ -113,7 +124,7 @@ margin-right: 0;
     align-items: center;
 }
 .modal-content{
-
+    border-radius: 20px;
     background-color: white;
     padding: 20px;
     width: 500px;
@@ -133,4 +144,58 @@ margin-right: 0;
 }
 #Ingredi-list li{
     margin: 5px 0px;
+}
+
+@media all and (max-width: 900px){
+    .msg{
+        padding: 10px;
+        width: 80vw;
+    }
+    #search{
+        width: 50vw;
+    }
+}
+@media all and (max-width: 550px){
+    .msg{
+        padding: 10px;
+        width: 90vw;
+    }
+    #search{
+        width: 60vw;
+    }
+    .modal-content{
+        width: 70vw;
+    }
+    .random-meal img{
+        width: 300px;
+        /* border-radius: 10px; */
+    }
+    .random-meal h3{    
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 389px){
+    .logo{
+        width: 100px;
+        height: 90px;
+    }
+    .msg h2{
+        font-size: 15px;
+    }
+    .container{
+        /* margin-top: 30px; */
+    } 
+    .random-meal img{
+        width: 250px;
+    }
+    .result img{
+        width: 250px;
+    }
+    #reuslt-name{
+        font-size: 20px;
+    }
+    .result{
+        width: 280px;
+    }
+
 }

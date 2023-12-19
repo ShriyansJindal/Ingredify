@@ -17,6 +17,7 @@ body{
     /* justify-content: space-around; */
     text-align: center;
 }
+/* logo */
 .logo{
     margin: 20px;
     margin-bottom: 0;
@@ -25,6 +26,7 @@ body{
     width: 120px;
     height: 110px;
 }
+/* about section below logo */
 .about{
     /* border: 2px solid red; */
 }
@@ -37,6 +39,7 @@ body{
     margin: 0;
     font-size: 18px;
 }
+/* search box */
 .search-box{
     display: flex;
     justify-content: center;
@@ -60,6 +63,7 @@ font-weight: bold;
     padding: 10px 10px;
     border-radius: 0px 50px 50px 0px;
 }
+/* container for random meal */
 .container{
     /* border: 2px solid red; */
     margin-bottom: 100px;
@@ -73,6 +77,7 @@ font-weight: bold;
     /* margin-bottom: 0px; */
     margin: 25px 0px;
 }
+/* iamge of random meal */
 .random-meal{
     padding: 15px;
     border-radius: 20px;
@@ -83,6 +88,7 @@ font-weight: bold;
     text-align: center;
     cursor: pointer;
 }
+/* text about the random dish */
 .random-meal-text h2{
     font-size: 35px;
     margin-bottom: 15px;
@@ -133,6 +139,7 @@ font-weight: bold;
     text-decoration: none;
     color: black;
 }
+/* search result */
 .search-result{
     /* border: 2px solid black; */
     /* margin-top: 50px; */
@@ -140,10 +147,12 @@ font-weight: bold;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+/* Heading os search result */
 #Search-name{
     text-align: center;
     font-size: 45px;
 }
+/* each result tile */
 .result{
     cursor: pointer;
     /* border: 2px solid gray; */
@@ -159,11 +168,13 @@ font-weight: bold;
     box-shadow: none;
     transform: scale(0.95);
 }
+/* image in result tile */
 .result img{
     width: 300px;
     border-radius: 20px;
     
 }
+/* modal */
 .modal{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.468);
@@ -197,8 +208,9 @@ font-weight: bold;
 #Ingredi-list li{
     margin: 5px 0px;
 }
+/* footer */
 footer{
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     /* height: 300px; */
     color: white;
     padding: 10px 100px;
@@ -233,7 +245,7 @@ footer{
     margin: 0px 10px;
 }
 .made{
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
     margin: 0%;
     text-align: center;

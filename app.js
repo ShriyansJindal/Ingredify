@@ -120,7 +120,7 @@ function searchresult(search) {
         });
       }
       else {
-        Search_name.innerText = 'Categorie Not Found';
+        Search_name.innerText = 'Category Not Found';
       }
 
       search_result.innerHTML = out;

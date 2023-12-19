@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -49,6 +50,9 @@ border: none;
 outline: none;
 margin: 10px 20px;
 margin-right: 0;
+text-align: center;
+font-weight: bold;
+
 }
 .search-icon{
     /* margin: 1px; */
@@ -58,13 +62,17 @@ margin-right: 0;
 }
 .container{
     /* border: 2px solid red; */
-    margin-top: 45px;
+    /* margin-top: 45px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: calc(100vh - 268px); */
+    gap: 50px;
 }
-
+.heading{
+    text-align: center;
+    /* margin-bottom: 0px; */
+    margin: 25px 0px;
+}
 .random-meal{
     padding: 15px;
     border-radius: 20px;
@@ -73,14 +81,54 @@ margin-right: 0;
     /* width: 400px; */
     /* border: 2px solid black; */
     text-align: center;
+    cursor: pointer;
 }
-.random-meal h3{
-    margin:10px auto;
-    width: 300px;
+.random-meal-text h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.random-meal-text h3{
+    /* font-size: 35px; */
+    margin: 30px 0px;
+}
+.random-meal-text{
+    /* border: 2px solid black; */
+    background-color:rgb(254, 249, 242);
+    /* margin: 0px 50px; */
+    height: 365px;
+    padding: 15px;
+    width: 350px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgb(164, 164, 164);
+    
 }
 .random-meal img{
     width: 330px;
     border-radius: 20px;
+}
+
+.random-meal-text button{
+    padding: 10px 20px;
+    border-radius:20px ;
+    background-color:antiquewhite;
+    /* border: 1px solid black; */
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.459);
+    width: fit-content;
+}
+.random-meal-text button:active{
+    transform: scale(0.9);
+    box-shadow: none;
+}
+.random-meal-text button a{
+    text-decoration: none;
+    color: black;
 }
 .search-result{
     /* border: 2px solid black; */
@@ -94,6 +142,7 @@ margin-right: 0;
     font-size: 45px;
 }
 .result{
+    cursor: pointer;
     /* border: 2px solid gray; */
     background-color: rgb(255, 247, 233);
     box-shadow: 0 0 10px 0 rgb(164, 164, 164);
@@ -145,6 +194,47 @@ margin-right: 0;
 #Ingredi-list li{
     margin: 5px 0px;
 }
+footer{
+    background-color: black;
+    /* height: 300px; */
+    color: white;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+    
+}
+.footer{
+    width: 70vw;
+    /* height: 120px; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    padding: 10px;
+    /* border: 2px solid white; */
+    width: 300px;
+}
+.left p{
+    color: rgb(206, 206, 206);
+}
+.right{
+    /* border: 2px solid greenyellow; */
+    padding: 10px;
+}
+.right i{
+    font-size: 25px;
+    margin: 0px 10px;
+}
+.made{
+    background-color: black;
+    color: white;
+    margin: 0%;
+    text-align: center;
+    padding-bottom: 5px;
+}
 
 @media all and (max-width: 900px){
     .msg{
@@ -153,6 +243,37 @@ margin-right: 0;
     }
     #search{
         width: 50vw;
+    }
+
+}
+@media all and (max-width:800px){
+    .random-meal img{
+        width: 250px;
+    }
+    .random-meal-text{
+        width: 280px;
+        height: 285px;
+    }
+    .random-meal-text h2{
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    .random-meal-text h3{
+        margin: 20px 0px;
+    }
+}
+@media all and (max-width: 630px){
+    .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer{
+        justify-content: center;
+        padding-bottom:30px;
+    }
+    .footer{
+        flex-direction: column;
+        width: fit-content;
     }
 }
 @media all and (max-width: 550px){
@@ -167,7 +288,7 @@ margin-right: 0;
         width: 70vw;
     }
     .random-meal img{
-        width: 300px;
+        /* width: 300px; */
         /* border-radius: 10px; */
     }
     .random-meal h3{    

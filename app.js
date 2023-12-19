@@ -23,6 +23,7 @@ search.addEventListener("keypress", function (e) {
     var search_val = search.value;
     // console.log(search_val)
     searchresult(search_val);
+    
   }
 });
 // click event for search icon
@@ -51,10 +52,16 @@ function generaterandom() {
   fetch("https://www.themealdb.com/api/json/v1/1/random.php")
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data.meals[0].strMeal)
+      // console.log(data.meals[0])
       showIngredients(data.meals[0].strMeal);
       random_img.src = data.meals[0].strMealThumb;
       random_dish_name.innerText = data.meals[0].strMeal;
+      // document.getElementById("instructions").textContent = data.meals[0].strInstructions
+      document.getElementById("area").textContent = data.meals[0].strArea
+      document.getElementById("catigory").textContent = data.meals[0].strCategory
+      document.getElementById("tags").textContent = data.meals[0].strTags
+      document.getElementById("youtube").href = data.meals[0].strYoutube
+      
     })
     .catch((error) => console.error("Error:", error));
 }
@@ -100,6 +107,7 @@ function searchresult(search) {
   fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${search}`)
     .then((response) => response.json())
     .then((data) => {
+      location.href = '#Search-name'
       // console.log(data)
       if (data.meals != null) {
         Search_name.innerText = search;

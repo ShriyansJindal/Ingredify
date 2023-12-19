@@ -59,7 +59,6 @@ function generaterandom() {
       // document.getElementById("instructions").textContent = data.meals[0].strInstructions
       document.getElementById("area").textContent = data.meals[0].strArea
       document.getElementById("catigory").textContent = data.meals[0].strCategory
-      document.getElementById("tags").textContent = data.meals[0].strTags
       document.getElementById("youtube").href = data.meals[0].strYoutube
       
     })
@@ -109,20 +108,24 @@ function searchresult(search) {
     .then((data) => {
       location.href = '#Search-name'
       // console.log(data)
+      let out = ``;
       if (data.meals != null) {
         Search_name.innerText = search;
+        data.meals.forEach((el) => {
+          // console.log(el)
+          out += `<div class="result" id='result' onclick='showModal()'>
+        <img src="${el.strMealThumb}" id="result-img" alt="">
+        <h4 id="reuslt-name">${el.strMeal}</h4>
+    </div>`;
+        });
       }
-      let out = ``;
-      data.meals.forEach((el) => {
-        // console.log(el)
-        out += `<div class="result" id='result' onclick='showModal()'>
-      <img src="${el.strMealThumb}" id="result-img" alt="">
-      <h4 id="reuslt-name">${el.strMeal}</h4>
-  </div>`;
-      });
+      else {
+        Search_name.innerText = 'Categorie Not Found';
+      }
+
       search_result.innerHTML = out;
     })
-    .catch((error) => console.error("Error:", error));
+    // .catch((error) => console.error("Error:", error));
 }
 
 search_result.onclick = (e) => {

@@ -53,7 +53,9 @@ function generaterandom() {
     .then((response) => response.json())
     .then((data) => {
       // console.log(data.meals[0])
-      showIngredients(data.meals[0].strMeal);
+      document.getElementById("random-img").onclick=()=>{
+        showIngredients(data.meals[0].strMeal);
+      }
       random_img.src = data.meals[0].strMealThumb;
       random_dish_name.innerText = data.meals[0].strMeal;
       // document.getElementById("instructions").textContent = data.meals[0].strInstructions
@@ -69,35 +71,10 @@ function showIngredients(name) {
   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data)
-      let Ingredient = [
-        data.meals[0].strIngredient1,
-        data.meals[0].strIngredient2,
-        data.meals[0].strIngredient3,
-        data.meals[0].strIngredient4,
-        data.meals[0].strIngredient5,
-        data.meals[0].strIngredient6,
-        data.meals[0].strIngredient7,
-        data.meals[0].strIngredient8,
-        data.meals[0].strIngredient9,
-        data.meals[0].strIngredient10,
-        data.meals[0].strIngredient11,
-        data.meals[0].strIngredient12,
-        data.meals[0].strIngredient13,
-        data.meals[0].strIngredient14,
-        data.meals[0].strIngredient15,
-        data.meals[0].strIngredient16,
-        data.meals[0].strIngredient17,
-        data.meals[0].strIngredient18,
-        data.meals[0].strIngredient19,
-        data.meals[0].strIngredient20,
-      ];
-      Ingredient.forEach((el) => {
-        if (el != "" && el!=null) {
-          // console.log(el)
-          document.getElementById("Ingredi-list").innerHTML += `<li>${el}</li>`;
-        }
-      });
+      for(let i=1;i<=20;i++){
+        if (data.meals[0][`strIngredient${i}`] != "" && data.meals[0][`strIngredient${i}`]!=null){
+        document.getElementById("Ingredi-list").innerHTML += `<li>${data.meals[0][`strIngredient${i}`]}</li>`;
+      }}
     })
     .catch((error) => console.error("Error:", error));
 }

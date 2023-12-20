@@ -19,4 +19,8 @@ https://shriyansjindal.github.io/Ingredify/
 -Search Results: Display search results based on user queries.
 -Footer: Include information about the website and contact details.
 
-
+## Screenshots
+![Screenshot 2023-12-20 102418](https://github.com/ShriyansJindal/Ingredify/assets/92571950/cb1530a2-4597-4fb1-93d2-92c72e116b84)
+![Screenshot 2023-12-20 102436](https://github.com/ShriyansJindal/Ingredify/assets/92571950/bd978dff-17c5-4b3d-85b5-5084d0d17247)
+![Screenshot 2023-12-20 102453](https://github.com/ShriyansJindal/Ingredify/assets/92571950/8681b6a6-7eeb-4218-8da7-986e3d0e540a)
+![Screenshot 2023-12-20 102517](https://github.com/ShriyansJindal/Ingredify/assets/92571950/aac3433f-61ed-4958-889d-14314ab7612e)

@@ -5,6 +5,8 @@ This project aims to create a web application that suggests random dishes to use
 ## Deploy link
 https://shriyansjindal.github.io/Ingredify/
 
+Figma link - https://www.figma.com/file/FCCKXHpU1s8OOfNx3d2OAw/Untitled?type=design&node-id=0%3A1&mode=design&t=rkxmANzzisodgX49-1
+
 ## Tech Stack
  HTML5  
  CSS    

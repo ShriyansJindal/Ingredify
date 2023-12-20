@@ -22,6 +22,8 @@ Figma link - https://www.figma.com/file/FCCKXHpU1s8OOfNx3d2OAw/Untitled?type=des
 
 -Random Dish Display: Showcase a randomly suggested dish with its image and necessary details.
 
+-Modal: Click on any image to see its ingredients.
+
 -Search Results: Display search results based on user queries.
 
 -Footer: Include information about the website and contact details.
